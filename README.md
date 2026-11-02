@@ -2,6 +2,12 @@
 
 Describe who you're looking for in plain English ("senior React engineers in New York who have worked at a startup") and get a ranked list of matching candidates. Recruiters from different companies share one candidate pool but see only their own shortlists, saved searches and plan. Built with Next.js 16, local Supabase (Postgres with row-level security) and Claude Haiku 5.5.
 
+![Search results: the brief, the filters it became, and the ranked matches](docs/screenshots/search-results.png)
+
+| Candidate profile | Shortlist |
+|---|---|
+| ![Candidate profile](docs/screenshots/candidate-profile.png) | ![Shortlist](docs/screenshots/shortlist.png) |
+
 `make setup` then `make dev` → http://localhost:3000 (needs Node 24 and Docker running). Put `ANTHROPIC_API_KEY` and `STRIPE_WEBHOOK_SECRET` in your shell or `.env.local`. Sign in as `recruiter@acme.test` or `recruiter@globex.test` (password `people-search-demo`). `make dev` serves a production build, so timings are realistic; `make watch` hot-reloads.
 
 ## How search works
